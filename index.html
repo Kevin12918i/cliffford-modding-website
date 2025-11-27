@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cliffford Modding</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' style='stop-color:%2300d4ff;stop-opacity:1'/><stop offset='50%' style='stop-color:%237b68ee;stop-opacity:1'/><stop offset='100%' style='stop-color:%23ff00ff;stop-opacity:1'/></linearGradient></defs><rect width='100' height='100' fill='%23000'/><path d='M 20 45 Q 30 20, 50 20 Q 70 20, 80 45 Q 70 70, 50 70 Q 30 70, 20 45 Z' fill='none' stroke='url(%23g)' stroke-width='3'/><circle cx='50' cy='45' r='20' fill='none' stroke='url(%23g)' stroke-width='2.5'/><path d='M 50 30 L 40 55 L 60 55 Z' fill='none' stroke='url(%23g)' stroke-width='2'/></svg>">
+
+<meta name="description" content="Cliffford Modding - Premium GTA Online Modding Services. UnlockAll, Free Heists, Money Drops, Custom Car Tuning. Support 20-21 Uhr.">
+<meta name="keywords" content="GTA Online Modding, UnlockAll, Money Drop, GTA Heist Service, GTA Car Tuning, Cliffford Modding">
+<meta name="author" content="Cliffford Modding">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#000;color:#fff;overflow-x:hidden;overflow-y:auto;}
+html{scroll-behavior:smooth;}
+.gradient-text{background:linear-gradient(135deg,#00d4ff 0%,#7b68ee 50%,#ff00ff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:2rem;position:relative;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 50% 50%, rgba(0,212,255,0.1) 0%, transparent 70%);animation:pulse 4s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:0.3;}50%{opacity:0.6;}}
+.logo-container{margin-bottom:3rem;}
+h1{font-size:4rem;font-weight:900;margin-bottom:1rem;letter-spacing:3px;text-transform:uppercase;}
+.tagline{font-size:1.5rem;margin-bottom:3rem;opacity:0.9;}
+.cta-button{padding:1rem 3rem;font-size:1.2rem;background:linear-gradient(135deg,#00d4ff 0%,#7b68ee 50%,#ff00ff 100%);border:none;border-radius:50px;color:#fff;font-weight:bold;cursor:pointer;text-transform:uppercase;letter-spacing:2px;position:relative;overflow:hidden;transition:all 0.3s;}
+.cta-button::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:rgba(255,255,255,0.2);transition:left 0.5s ease;}
+.cta-button:hover::before{left:100%;}
+.cta-button:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,212,255,0.4);}
+.services{padding:5rem 2rem;max-width:1200px;margin:0 auto;}
+.services h2{text-align:center;font-size:3rem;margin-bottom:4rem;}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
+.service-card{background:linear-gradient(135deg, rgba(0,212,255,0.05) 0%, rgba(255,0,255,0.05) 100%);padding:2rem;border-radius:20px;border:1px solid rgba(0,212,255,0.3);position:relative;overflow:hidden;transition:all 0.3s;}
+.service-card:hover{transform:translateY(-10px);border-color:rgba(0,212,255,0.8);box-shadow:0 20px 60px rgba(0,212,255,0.3);}
+.service-icon{font-size:3rem;margin-bottom:1rem;}
+.service-card h3{font-size:1.5rem;margin-bottom:1rem;}
+.service-card p{opacity:0.8;line-height:1.6;margin-bottom:1.5rem;}
+.service-button{padding:0.8rem 2rem;font-size:1rem;background:linear-gradient(135deg,#00d4ff 0%,#7b68ee 50%,#ff00ff 100%);border:none;border-radius:25px;color:#fff;font-weight:bold;cursor:pointer;text-transform:uppercase;letter-spacing:1px;width:100%;transition:all 0.3s;}
+.service-button:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,212,255,0.4);}
+.avatar{width:150px;height:150px;margin:0 auto 1.5rem auto;border-radius:50%;background-size:cover;background-position:center;background-color:#1a1a1a;position:relative;overflow:hidden;}
+.avatar-mr{background-image:url('https://i.imgur.com/itzV1EU.jpeg');border:4px solid rgba(0,212,255,0.5);box-shadow:0 0 30px rgba(0,212,255,0.5);}
+.avatar-bk{background-image:url('https://i.imgur.com/itzV1EU.jpeg');border:4px solid rgba(255,0,0,0.7);box-shadow:0 0 30px rgba(255,0,0,0.6);transform:rotate(-5deg);}
+.team-grid{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem;}
+.payment-methods{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.5rem;}
+.payment-method{background:white;padding:1rem 2rem;border-radius:15px;color:#000;font-weight:bold;transition:all 0.3s;cursor:pointer;}
+.payment-method:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,212,255,0.4);}
+footer{text-align:center;padding:3rem 2rem;border-top:1px solid rgba(0,212,255,0.2);}
+@media (max-width:768px){h1{font-size:2.5rem;}.tagline{font-size:1.2rem;}.team-grid{flex-direction:column;align-items:center;}}
+</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="logo-container">
+        <img src="https://i.imgur.com/E9AEfNP.png" alt="Cliffford Modding Logo" width="200">
+    </div>
+    <h1 class="gradient-text">Willkommen bei Cliffford Modding</h1>
+    <p class="tagline">Schneller. Stärker. Besser. Dein Vorteil.</p>
+    <button class="cta-button" onclick="window.open('https://discord.gg/qbUkc4ja3R','_blank')">Join Discord Server</button>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+    <h2 class="gradient-text">Unsere Services</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3 class="gradient-text">Premium Modding</h3>
+            <p>Individuelle Modding-Services nach deinen Wünschen.<br><strong class="gradient-text">Preis auf Anfrage</strong></p>
+            <button class="service-button" onclick="window.location.href='#'">Jetzt Konfigurieren</button>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💰</div>
+            <h3 class="gradient-text">Free Heist Raubüberfälle</h3>
+            <p>Kostenlose Heist-Durchführungen für maximale Belohnungen ohne Aufwand.<br><strong class="gradient-text">FREE</strong></p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💸</div>
+            <h3 class="gradient-text">RP und Money Drop</h3>
+            <p>Schnelle RP- und Money-Drops für deinen Account.<br><strong class="gradient-text">FREE</strong></p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🏎️</div>
+            <h3 class="gradient-text"> Auto Tuning</h3>
+            <p>Kostenlose Fahrzeuganpassung nach Wunsch.<br><strong class="gradient-text">5,00€</strong></p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔓</div>
+            <h3 class="gradient-text">UnlockAll</h3>
+            <p>Schalte alle Inhalte, Fahrzeuge und Items frei!<br><strong class="gradient-text">15,00€</strong></p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">💬</div>
+            <h3 class="gradient-text">Support & Beratung</h3>
+            <p>Von 20-21 Uhr Support für alle deine Fragen und individuelle Beratung.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section class="services">
+    <h2 class="gradient-text">Unser Modder Team</h2>
+    <div class="team-grid">
+        <!-- Mr Cliffford -->
+        <div style="background: linear-gradient(135deg, rgba(0,212,255,0.1) 0%, rgba(123,104,238,0.1) 100%); padding:2.5rem 2rem; border-radius:20px; border:2px solid rgba(0,212,255,0.4); text-align:center; overflow:hidden; flex:1; min-width:250px;">
+            <div class="avatar avatar-mr"></div>
+            <h3 class="gradient-text">👑 Mr Cliffford - Gründer</h3>
+            <p style="color:#00d4ff;font-weight:bold;">Founder & Head Modder</p>
+            <p>Experte für UnlockAll, Money Drops und Custom Modding seit 2020.</p>
+            <p style="color:#ff4444;font-weight:bold;">Beserkermi beachten!</p>
+            <button class="cta-button" onclick="window.open('https://discord.gg/qbUkc4ja3R','_blank')">Support / Ticket öffnen</button>
+        </div>
+        <!-- Beserker Kimi -->
+        <div style="background: linear-gradient(135deg, rgba(255,0,0,0.1) 0%, rgba(255,165,0,0.1) 100%); padding:2.5rem 2rem; border-radius:20px; border:2px solid rgba(255,0,0,0.5); text-align:center; overflow:hidden; flex:1; min-width:250px;">
+            <div class="avatar avatar-bk"></div>
+            <h3 class="gradient-text">Beserker Kimi</h3>
+            <p style="color:#ff4444;font-weight:bold;">Special Modder</p>
+            <p>Besondere Skills im Bereich Free Heists & Auto Tuning. Immer bereit für Support und schnelle Lösungen.</p>
+            <button class="cta-button" onclick="window.open('https://discord.gg/qbUkc4ja3R','_blank')">Support / Ticket öffnen</button>
+        </div>
+    </div>
+</section>
+
+<!-- Zahlungsoptionen -->
+<section class="services">
+    <h2 class="gradient-text">Zahlungsmethoden</h2>
+    <div class="payment-methods">
+        <div class="payment-method">Steam-Guthaben</div>
+        <div class="payment-method">Google Pay</div>
+    </div>
+    <p style="text-align:center;max-width:700px;margin:0 auto;color:#ff4444;font-weight:bold;">
+        Hinweis: Wenn du Steam-Guthaben, Google Pay oder ähnliche Zahlungsmethoden benutzt, wende dich bitte an unseren Support.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div style="max-width:800px;margin:0 auto;padding:1.5rem;background:rgba(255,0,0,0.1);border:1px solid rgba(255,0,0,0.3);border-radius:15px;">
+        <p style="color:#ff4444;font-weight:bold;">⚠️ Wichtiger Hinweis</p>
+        <p>Wir distanzieren uns von jeglicher Haftung bei Account-Sperren oder Bans. Nutzung auf eigene Verantwortung.</p>
+        <p>Beserkermi beachten!</p>
+        <p>Es gibt keine Geld-zurück-Garantie. Alle Käufe sind endgültig.</p>
+    </div>
+    <p>© 2025 Cliffford Modding. Dein Game, unser Service. <a href="https://discord.gg/qbUkc4ja3R" style="color:#00d4ff;">Discord Server</a></p>
+</footer>
+
+</body>
+</html>
